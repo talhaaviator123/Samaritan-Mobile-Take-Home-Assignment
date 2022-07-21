@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="pokemon"
+            type="com.samaritan.assignment.model.pokemon.PokemonListItem" />
+        <variable
+            name="pokemonItemClick"
+            type="com.samaritan.assignment.view.adapter.CapturedPokemonsAdapter.CapturedPokemonClickListener" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:onClick="@{() ->  pokemonItemClick.onPokemonItemClicked(pokemon)}"
+        app:cardElevation="@dimen/_6sdp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:background="#E11818"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+               app:pokemonImage="@{pokemon.pokemonDetail.sprites.other.officialArtwork.frontDefault}"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:text="@{pokemon.pokemonCapturedModel.nickName}"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tvCaptureOnTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/captured_on"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toBottomOf="@+id/name"/>
+
+            <TextView
+                android:id="@+id/tvCaptureOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{pokemon.pokemonCapturedModel.capturedDate}"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/tvCaptureOnTitle"
+                app:layout_constraintTop_toBottomOf="@+id/name"/>
+
+            <TextView
+                android:id="@+id/tvCaptureLevelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_2sdp"
+                android:text="@string/captured_on"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/image"
+                app:layout_constraintTop_toBottomOf="@+id/tvCaptureOnTitle"/>
+
+            <TextView
+                android:id="@+id/tvCaptureLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@{pokemon.pokemonCapturedModel.capturedLevel}"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toEndOf="@+id/tvCaptureLevelTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCaptureOnTitle"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

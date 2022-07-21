@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/background_dialog.xml" value="0.161" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.107" />
+        <entry key="app/src/main/res/drawable/background_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_dialog.xml" value="0.107" />
+        <entry key="app/src/main/res/drawable/background_edittext.xml" value="0.1795" />
+        <entry key="app/src/main/res/drawable/book_btn_bg.xml" value="0.24814814814814815" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.107" />
+        <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.1005" />
+        <entry key="app/src/main/res/drawable/ic_sharp_play_circle_filled_24.xml" value="0.107" />
+        <entry key="app/src/main/res/drawable/ic_splash_icon.xml" value="0.107" />
+        <entry key="app/src/main/res/layout/activity_book_movie_screen.xml" value="0.1859375" />
+        <entry key="app/src/main/res/layout/activity_captured_pokemons.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21481481481481482" />
+        <entry key="app/src/main/res/layout/activity_movie_detail_screen.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_pokemon_detail_screen.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/activity_youtube.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/capture_dialog.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/captured_pokemon_list_item.xml" value="0.18926553672316385" />
+        <entry key="app/src/main/res/layout/dialog_loading.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/movie_image_item.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/movie_list_item.xml" value="0.159375" />
+        <entry key="app/src/main/res/layout/pokemon_list_item.xml" value="0.1981475830078125" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.29791666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

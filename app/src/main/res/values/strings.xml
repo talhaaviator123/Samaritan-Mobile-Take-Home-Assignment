@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Mobile Take Home Assignment</string>
+    <string name="please_wait">Please Wait…</string>
+    <string name="about">About</string>
+    <string name="type_s">Type(s):</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="base_stats">Base Stats</string>
+    <string name="hp">HP:</string>
+    <string name="attack">Attack:</string>
+    <string name="defence">Defence:</string>
+    <string name="special_attack">Special Attack:</string>
+    <string name="special_defence">Special Defence:</string>
+    <string name="speed">Speed</string>
+    <string name="capture">Capture</string>
+    <string name="nickname">NickName</string>
+    <string name="captured_date">Captured Date</string>
+    <string name="captured_pokemon">Captured Pokemon</string>
+    <string name="nickname_collon">NickName:</string>
+    <string name="captured_date_collon">Captured Date:</string>
+    <string name="captured_pokemon_collon">Captured Pokemon:</string>
+    <string name="captured_on">Captured On:</string>
+</resources>

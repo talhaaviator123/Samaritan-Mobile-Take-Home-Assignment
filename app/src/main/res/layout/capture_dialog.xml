@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.samaritan.assignment.viewmodel.PokemonsDetailsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_dialog"
+        android:padding="@dimen/_20sdp">
+
+        <EditText
+            android:id="@+id/edNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/nickname"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:padding="@dimen/_10sdp"
+            android:text="@={viewmodel.pokemonDetailsObserverModel.nickname}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edCapturedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/captured_date"
+            android:importantForAutofill="no"
+            android:padding="@dimen/_10sdp"
+            android:text="@{viewmodel.pokemonDetailsObserverModel.capturedDate}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edNickName" />
+
+        <EditText
+            android:id="@+id/edCapturedLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/captured_date"
+            android:importantForAutofill="no"
+            android:padding="@dimen/_10sdp"
+            android:text="@={viewmodel.pokemonDetailsObserverModel.capturedLevel}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edCapturedDate" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/background_button"
+            android:text="@string/capture"
+            android:id="@+id/btnCapture"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/edCapturedLevel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
